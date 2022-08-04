@@ -1,14 +1,8 @@
 # Dart语法-类型、操作符、方法
 
-
-
 ​       学习一门新的语言，我们可以以自己现有的熟悉的语言来类比，比如我们非常熟悉`Java`，那么剩下的就是需要掌握与`Java`不同的`Dart`语法，剩下的就需要靠自己多写多看来慢慢熟悉。
 
-
-
 ​	国际惯例，使用Dart完成一个："Hello，World!"
-
-
 
 ```dart
 void main() {
@@ -16,11 +10,7 @@ void main() {
 }
 ```
 
-
-
 运行Dart 代码可以使用  `dart xxx.dart`，dart命令需要配置环境变量，将 “${FLUTTER_SDK}/bin/cache/dart-sdk/bin” 配置到变量 PATH 中即可。
-
-
 
 ## 变量
 
@@ -37,8 +27,6 @@ print('$name1 $name2 $name3');
 ​	可以用Object、var与dynamic声明的变量赋任何类型的值，但是背后的原理却是非常不同。
 
 **1、Object：** 与Java一样Object是所有类的基类，Object声明的变量可以是任意类型。（在 Dart 中 甚至连 数字、方法和 `null` 都是对象，比如int。）
-
-
 
 ```plain
 Object a = 1;
@@ -59,13 +47,9 @@ b = "a";
 
 **3、dynamic：** 不是在编译时候确定实际类型的, 而是在运行时。dynamic声明的变量行为与Object一样，使用一样，关键在于运行时原理不同。
 
-没有初始化的变量自动获取一个默认值为 `null`（类型为数字的 变量如何没有初始化其值也是 null）。
-
- 
+没有初始化的变量自动获取一个默认值为 `null`（类型为数字的 变量如何没有初始化其值也是 null）。 
 
 在声明变量的时候，也可以选择加上具体 类型：int a = 1;
-
- 
 
 对于局部变量，按照Dart代码风格推荐，使用 `var` 而不是具体的类型来定义局部变量。
 
@@ -94,7 +78,7 @@ const c = a + 1;
 
 类的变量可以为 `final` 但是不能是 `const` 。如果 const 变量在类中，需要定义为`static const`静态常量。
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/12856485/1657262080655-a026fbb3-71cd-4c21-929d-1fc5264efcc9.png)
+![img](../../图片/1657262080655-a026fbb3-71cd-4c21-929d-1fc5264efcc9.png)
 
 ## 内置的类型
 
