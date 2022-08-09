@@ -6,7 +6,7 @@
 
 ​	Dart是基于单线程模型的语言。但是在开发当中我们经常会进行耗时操作比如网络请求，这种耗时操作会堵塞我们的代码，所以在Dart也有并发机制，名叫**isolate**。APP的启动入口`main`函数就是一个类似Android主线程的一个主isolate。和Java的Thread不同的是，Dart中的isolate无法共享内存。
 
-![isolate](../../图片\isolate.png)
+![isolate](../../图片/isolate.png)
 
 ```dart
 import 'dart:isolate';
